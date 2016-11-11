@@ -5,6 +5,7 @@ clear
 
     echo -e 'Downloading, Installing and Configuring your system after Ubuntu Installation.\n'
 
+
 ## System Update and Upgrade
 
     # Update
@@ -12,6 +13,7 @@ clear
     
     # Upgrade
     sudo apt full-upgrade -y
+
 
 ## Tor Config
 
