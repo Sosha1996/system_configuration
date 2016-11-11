@@ -7,19 +7,19 @@ clear
 
 ## System Update and Upgrade
 
-	# Update
+    # Update
     sudo apt update
-
-	# Upgrade
-	sudo apt full-upgrade -y
+    
+    # Upgrade
+    sudo apt full-upgrade -y
 
 ## Tor Config
 
-	# Download and Run Scprit Traktor
-	wget https://github.com/ubuntu-ir/traktor/archive/master.zip -O traktor.zip
-	unzip traktor.zip && cd traktor-master
-	./traktor.sh
-	cd
+    # Download and Run Scprit Traktor
+    wget https://github.com/ubuntu-ir/traktor/archive/master.zip -O traktor.zip
+    unzip traktor.zip && cd traktor-master
+    ./traktor.sh
+    cd
 
     echo 'UseBridges 1
 Bridge obfs4 138.201.73.190:45255 343D4A6E517B63A989667861E551077121A1C1BC cert=K7X5jz2GKVygFWcQJ44B9dM54UQ+ZZ0NFrG6aWrMfiHU/lq55HxDtGw5benQ6EBa9i30Qg iat-mode=0
@@ -72,75 +72,75 @@ SystemAccount=false'" | sudo tee /var/lib/AccountsService/users/sosha > /dev/nul
 
 ## Fonts
 
-	# Download Fonts and Font Config
-	wget https://soshaw.net/IRANSans.ttf
+    # Download Fonts and Font Config
+    wget https://soshaw.net/IRANSans.ttf
     wget https://dl.soshaw.net/.fonts.conf
 
-	# Fonts Config
-	mkdir ~/.fonts
-	mv IRANSans.ttf .fonts  
+    # Fonts Config
+    mkdir ~/.fonts
+    mv IRANSans.ttf .fonts  
 
 ## Install App via APT
 
-	# Install Unity Tweak Tool
-	sudo apt install unity-tweak-tool -y
+    # Install Unity Tweak Tool
+    sudo apt install unity-tweak-tool -y
 
-	# Add PPA Numix and Install Numix
-	sudo add-apt-repository ppa:numix/ppa -y
-	sudo apt update
-	sudo apt install numix-gtk-theme numix-icon-theme-circle -y
+    # Add PPA Numix and Install Numix
+    sudo add-apt-repository ppa:numix/ppa -y
+    sudo apt update
+    sudo apt install numix-gtk-theme numix-icon-theme-circle -y
 
-	# install Arc Theme
-	sudo apt install arc-theme -y
+    # install Arc Theme
+    sudo apt install arc-theme -y
 
-	# Add PPA Pulp and Install Paper Theme
-	sudo add-apt-repository ppa:snwh/pulp -y
-	sudo apt update
-	sudo apt install paper-icon-theme paper-gtk-theme paper-cursor-theme -y
+    # Add PPA Pulp and Install Paper Theme
+    sudo add-apt-repository ppa:snwh/pulp -y
+    sudo apt update
+    sudo apt install paper-icon-theme paper-gtk-theme paper-cursor-theme -y
 
-	# Install and Add PPA My Weather Indicator
-	sudo add-apt-repository ppa:atareao/atareao -y
-	sudo apt update
-	sudo apt install my-weather-indicator -y
+    # Install and Add PPA My Weather Indicator
+    sudo add-apt-repository ppa:atareao/atareao -y
+    sudo apt update
+    sudo apt install my-weather-indicator -y
 
-	# Install Indiactor Multiload
-	sudo apt install indicator-multiload -y
+    # Install Indiactor Multiload
+    sudo apt install indicator-multiload -y
 
-	# Install Gimp
-	sudo apt install gimp -y
+    # Install Gimp
+    sudo apt install gimp -y
 
-	# Install VLC
-	sudo apt install vlc -y
+    # Install VLC
+    sudo apt install vlc -y
+    
+    # Install Chermuim
+    sudo apt install chromium-browser -y
 
-	# Install Chermuim
-	sudo apt install chromium-browser -y
+    # Install Vim
+    sudo apt install vim -y
 
-	# Install Vim
-	sudo apt install vim -y
+    # Install Git
+    sudo apt install git -y
 
-	# Install Git
-	sudo apt install git -y
+    # Install Filezilla
+    sudo apt install filezilla -y
 
-	# Install Filezilla
-	sudo apt install filezilla -y
+    # Install Shutter
+    sudo apt install shutter -y
 
-	# Install Shutter
-	sudo apt install shutter -y
+    # Install VirtualBox
+    sudo apt install virtualbox -y
 
-	# Install VirtualBox
-	sudo apt install virtualbox -y
+    # Install Kazam
+    sudo apt install kazam -y
 
-	# Install Kazam
-	sudo apt install kazam -y
+    # Install Mplayer
+    sudo apt install mplayer -y
 
-	# Install Mplayer
-	sudo apt install mplayer -y
+    # Install Speedtest
+    sudo apt install speedtest-cli -y
 
-	# Install Speedtest
-	sudo apt install speedtest-cli -y
-
-	# Install Virt Manager
-	sudo apt install virt-manager -y
+    # Install Virt Manager
+    sudo apt install virt-manager -y
 
     # Install Htop
     sudo apt install htop -y
@@ -157,12 +157,12 @@ SystemAccount=false'" | sudo tee /var/lib/AccountsService/users/sosha > /dev/nul
 
 ## Install App and Download		
 
-	# Telegram	
+    # Telegram	
 
-	    # Download Telegram
-	    wget https://updates.tdesktop.com/tlinux/tsetup.0.10.19.tar.xz
+        # Download Telegram
+        wget https://updates.tdesktop.com/tlinux/tsetup.0.10.19.tar.xz
 	
-	    # Extract
+    # Extract
         mv tsetup.0.10.19.tar.xz ~/Downloads/ 
         cd ~/Downloads/
         tar xf tsetup.0.10.19.tar.xz 
@@ -173,12 +173,12 @@ SystemAccount=false'" | sudo tee /var/lib/AccountsService/users/sosha > /dev/nul
         # Download Teamspeak
         wget http://dl.4players.de/ts/releases/3.0.19.4/TeamSpeak3-Client-linux_amd64-3.0.19.4.run
 
-		# Install
-		chmod +x TeamSpeak3-Client-linux_amd64-3.0.19.4.run
-		./TeamSpeak3-Client-linux_amd64-3.0.19.4.run
-		sudo mv TeamSpeak3-Client-linux_amd64 /opt/
-		/opt/TeamSpeak3-Client-linux_amd64/ts3client_runscript.sh
-	 	echo '[Desktop Entry]
+        # Install
+        chmod +x TeamSpeak3-Client-linux_amd64-3.0.19.4.run
+        ./TeamSpeak3-Client-linux_amd64-3.0.19.4.run
+        sudo mv TeamSpeak3-Client-linux_amd64 /opt/
+        /opt/TeamSpeak3-Client-linux_amd64/ts3client_runscript.sh
+        echo '[Desktop Entry]
 Name=TeamSpeak 3
 Comment=TeamSpeak 3 VoIP Communicator
 Exec=/opt/TeamSpeak3-Client-linux_amd64/ts3client_runscript.sh
