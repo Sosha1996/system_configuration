@@ -164,7 +164,7 @@ SystemAccount=false'" | sudo tee /var/lib/AccountsService/users/sosha > /dev/nul
         # Download Telegram
         wget https://updates.tdesktop.com/tlinux/tsetup.0.10.19.tar.xz
 	
-    # Extract
+    	# Extract
         mv tsetup.0.10.19.tar.xz ~/Downloads/ 
         cd ~/Downloads/
         tar xf tsetup.0.10.19.tar.xz 
