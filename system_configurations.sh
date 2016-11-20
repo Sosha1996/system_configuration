@@ -147,7 +147,10 @@ SystemAccount=false'" | sudo tee /var/lib/AccountsService/users/sosha > /dev/nul
     # Install Htop
     sudo apt install htop -y
 
-
+    # Install Gparted
+    sudo apt install gparted -y
+    
+    
 ## Config Vim
 	
     # Download Files
@@ -188,7 +191,14 @@ Terminal=false
 Type=Application
 Categories=Network;Application;
 Icon=/opt/TeamSpeak3-Client-linux_amd64/styles/default/logo-128x128.png' | sudo tee ~/.local/share/applications/TeamSpeak3.desktop > /dev/null
-
+	
+	# SoundBoard
+	wget https://frie.se/ts3sb/soundboard-1.0b5-linux-amd64.ts3_plugin
+	unzip soundboard-1.0b5-linux-amd64.ts3_plugin
+	sudo mv package.ini /opt/TeamSpeak3-Client-linux_amd64/plugins
+	sudo mv plugins/bass/ /opt/TeamSpeak3-Client-linux_amd64/plugins
+	sudo mv plugins/libsoundboard_plugin.so /opt/TeamSpeak3-Client-linux_amd64/plugins
+	
     # Steam
 
         # Install Steam
@@ -201,6 +211,7 @@ sudo rm -rf ~/traktor.zip
 sudo rm -rf ~/traktor-master/
 sudo rm -rf ~/TeamSpeak3-Client-linux_amd64-3.0.19.4.run
 sudo rm -rf ~/Downloads/tsetup.0.10.19.tar.xz
+sudo rm -rf ~/soundboard-1.0b5-linux-amd64.ts3_plugin
 
 
 ## Restart System
