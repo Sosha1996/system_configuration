@@ -153,6 +153,9 @@ SystemAccount=false'" | sudo tee /var/lib/AccountsService/users/sosha > /dev/nul
     # Install Kodi
     sudo apt install kodi -y
     
+    # Install Mlterm
+    sudo apt install mlterm -y
+    
     
 ## Config Vim
 	
