@@ -150,6 +150,9 @@ SystemAccount=false'" | sudo tee /var/lib/AccountsService/users/sosha > /dev/nul
     # Install Gparted
     sudo apt install gparted -y
     
+    # Install Kodi
+    sudo apt install kodi -y
+    
     
 ## Config Vim
 	
@@ -199,11 +202,17 @@ Icon=/opt/TeamSpeak3-Client-linux_amd64/styles/default/logo-128x128.png' | sudo 
 	sudo mv plugins/bass/ /opt/TeamSpeak3-Client-linux_amd64/plugins
 	sudo mv plugins/libsoundboard_plugin.so /opt/TeamSpeak3-Client-linux_amd64/plugins
 	
+    # Lightworks
+    
+	# Download
+	wget http://downloads.lwks.com/lwks-12.6.0-amd64.deb
+	wget https://codeload.github.com/danialbehzadi/plugin.video.persianiptv/zip/master
+	
     # Steam
 
         # Install Steam
         sudo apt install steam -y
-
+	
 
 ## Remove
 sudo rm -rf ~/vim.zip
