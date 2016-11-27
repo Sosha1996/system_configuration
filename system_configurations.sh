@@ -208,8 +208,14 @@ Icon=/opt/TeamSpeak3-Client-linux_amd64/styles/default/logo-128x128.png' | sudo 
     # Lightworks
     
 	# Download
+	cd ~/Downloads/
 	wget http://downloads.lwks.com/lwks-12.6.0-amd64.deb
+	
+    # Kodi Plugin
+    
+    	# Download
 	wget https://codeload.github.com/danialbehzadi/plugin.video.persianiptv/zip/master
+	cd
 	
     # Steam
 
