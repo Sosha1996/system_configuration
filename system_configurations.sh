@@ -129,9 +129,6 @@ SystemAccount=false'" | sudo tee /var/lib/AccountsService/users/sosha > /dev/nul
     # Install Shutter
     sudo apt install shutter -y
 
-    # Install VirtualBox
-    sudo apt install virtualbox -y
-
     # Install Kazam
     sudo apt install kazam -y
 
@@ -155,6 +152,12 @@ SystemAccount=false'" | sudo tee /var/lib/AccountsService/users/sosha > /dev/nul
     
     # Install Mlterm
     sudo apt install mlterm -y
+    
+    # Install Audacity
+    sudo apt install audacity -y
+    
+    # Install Keepassx
+    sudo apt install keepassx -y
     
     
 ## Config Vim
