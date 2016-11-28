@@ -159,6 +159,10 @@ SystemAccount=false'" | sudo tee /var/lib/AccountsService/users/sosha > /dev/nul
     # Install Keepassx
     sudo apt install keepassx -y
     
+    # Install Python Pip
+    sudo apt install python-pip -y
+    sudo apt install python3-pip -y
+    
     
 ## Config Vim
 	
