@@ -24,7 +24,7 @@ clear
     cd
 
     echo 'UseBridges 1
-Bridge obfs4 IP Address:45255 343D4A6E517B63A989667861E551077121A1C1BC cert=K7X5jz2GKVygFWcQJ44B9dM54UQ+ZZ0NFrG6aWrMfiHU/lq55HxDtGw5benQ6EBa9i30Qg iat-mode=0
+Bridge obfs4 IP Address:port ... cert=... iat-mode=0
 ClientTransportPlugin obfs4 exec /usr/bin/obfs4proxy' | sudo tee /etc/tor/torrc > /dev/null
 sudo systemctl restart tor.service
 sudo service polipo restart
